@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Zen Kaku Gothic Antique', 'Lexend', sans-serif;
+  font-family: "Zen Kaku Gothic Antique", "Lexend", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: normal;
@@ -14,51 +14,75 @@ body {
   height: 100%;
 }
 
-
 /* HEADER STARTED*/
 
-
 .header {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-image: url(/img/background-nature.jpg) no-repeat center;
-	background-size: cover;
+  height: 290px;
+  background: url(../img/background-nature.jpg) no-repeat center;
+  background-size: cover;
+  margin: auto;
+}
+.header__wrapper {
+  width: 470px;
+  margin: 0 auto;
 }
 .header__title {
-	min-width: 500px;
-	padding: 70px 0 50px 0;
-	font-family: 'Zen Kaku Gothic Antique';
-	font-size: 40px;
-	font-weight: 900;
-	letter-spacing: 14px;
-	text-transform: uppercase;
-	color: white;
+  width: 470px;
+  padding: 70px 0 50px 0;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  color: white;
 }
-
 
 /* MAIN STARTED */
 
+.main {
+  margin-top: -135px;
+}
+.text-form__wrapper {
+  width: 470px;
 
+  display: flex;
+  justify-content: center;
 
-.main__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  margin: auto;
 }
-.wrapper__block {
-	width: 500px;
-	height: 70px;
-	background-color: white;
-	border-radius: 7px;
-	display: flex;
-	align-items: center;
-	margin-bottom: 30px;
+.text-form__block {
+  width: 470px;
+  height: 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  background-color: white;
 }
-.block__radio-button {
-	margin: 0 25px 0 25px;
+.text-form__field-checkbox {
+  margin: 0 20px 0 20px;
 }
-.block__search-bar {
-	width: 100%;
-	margin-right: 25px;
+.text-form__field-text {
+  width: 70%;
+  border: 0;
 }
+.menu li {
+  margin-bottom: 2px;
+}
+.menu li:first-child {
+  margin-bottom: 24px;
+}
+.info-block {
+  height: 35px;
+}
+.menu li:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.search-block {
+  border-radius: 5px;
+}
+
