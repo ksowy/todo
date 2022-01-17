@@ -9,7 +9,7 @@ body {
   font-weight: normal;
   line-height: 1.2;
   color: black;
-  background-color: #c7c7c7;
+  background-color: white;
   width: 100%;
   height: 100%;
 }
@@ -55,43 +55,56 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.block-string {
+.goals-string {
   width: 100%;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   background-color: white;
   border-radius: 5px;
-  padding: 8px 0 8px 0;
+  padding: 18px 0 18px 0;
 }
-.block-string__check {
-  width: 11%;
-  margin: 0 0 30px 22px;
+.goals-string__submit {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.block-string__text {
-  width: 78%;
-  border: 0px;
-  margin-right: 30px;
+.goals-string__text {
+  flex: 0px;
 }
-.block-string__cross {
-  width: 11%;
+.goals-string__cross {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#block-string__text {
+.submit {
+  width: 18px;
+  height: 18px;
+}
+.text {
   width: 100%;
+  height: 15px;
+
+  font-family: "Lexend";
+  font-weight: normal;
+  color: #757479;
+  /* border: 0px; */
 }
-#block-string__cross {
- max-width: 23px;
- max-height: 23px;
+.cross {
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+}
+.goals-string:hover .cross {
+  opacity: 0.6;
 }
 
-
-
-
-
-
-[type="checkbox"]:not(:checked)+label:hover::before {
+[type="checkbox"]:not(:checked) + label:hover::before {
   border: 1.5px solid #cbd0d4;
 }
 [type="checkbox"]:checked,
@@ -102,7 +115,6 @@ body {
 [type="checkbox"]:checked + label,
 [type="checkbox"]:not(:checked) + label {
   position: relative;
-  padding-left: 28px;
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
