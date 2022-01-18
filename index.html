@@ -12,23 +12,60 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
+      <div class="wrapper">
         <h1 class="header__title">todo</h1>
       </div>
     </header>
     <main class="main">
       <div class="wrapper">
-        <div class="goals-string">
-          <div class="goals-string__submit">
-            <input type="checkbox" name="checkbox-group" />
-            <label for="goals-string__submit" class="submit"></label>
+        <div class="todo-desc">
+          <div class="desc__submit">
+            <input type="checkbox" id="input-submit" name="checkbox-group" />
+            <label for="input-submit" class="submit"></label>
           </div>
-          <div class="goals-string__text">
+
+          <div class="desc__text">
             <input type="text" class="text"/>
           </div>
-          <div class="goals-string__cross">
-            <input type="image" src="./img/close.png" alt="cross" class="cross">  
-          </div>
+
+        </div>
+
+        <div class=desc">
+          <ul class="desc__list">
+            <li class="desc__item">
+              <div class="item__submit">
+                <input type="checkbox" id="input-submit" name="checkbox-group" />
+                <label for="input-submit" class="submit"></label>
+              </div>
+
+              <div class="item__text">
+                <a href="#" class="text">
+                  Complete online JavaScript course
+                </a>
+              </div>
+
+              <div class="item__cross">
+                <input type="image" src="./img/close.png" alt="cross" class="cross">  
+              </div>
+            </li>
+
+            <li class="desc__item">
+              <div class="item__submit">
+                <input type="checkbox" id="input-submit" name="checkbox-group" />
+                <label for="input-submit" class="submit"></label>
+              </div>
+
+              <div class="item__text">
+                <a href="#" class="text">
+                  Jog around the park 3x
+                </a>
+              </div>
+
+              <div class="item__cross">
+                <input type="image" src="./img/close.png" alt="cross" class="cross">  
+              </div>
+            </li>
+          </ul>
         </div>
       </div>          
   </body>
