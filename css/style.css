@@ -58,6 +58,7 @@ body {
 .todo-desc {
   width: 100%;
   background-color: white;
+  box-shadow: 0 14px 28px rgba(44, 44, 44, 0.25), 0 10px 10px rgba(44, 44, 44, 0.22);
 
   display: flex;
   align-items: center;
@@ -106,6 +107,10 @@ body {
 .todo-desc:hover .cross {
   opacity: 0.6;
 }
+.cross:active {
+  width: 13px;
+  height: 13px;
+}
 
 /* DESK STERTED */
 
@@ -113,12 +118,19 @@ body {
   width: 470px; /* разобраться с заданной шириной и назначить в процентах */
 
   background: white;
+  box-shadow: 0 14px 28px rgba(44, 44, 44, 0.25), 0 10px 10px rgba(44, 44, 44, 0.22);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 18px 0 18px 0;
   margin-bottom: 2px;
+}
+.desc__item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.desc__item:last-child {
+  border-radius: 0 0 5px 5px;
 }
 .desc__item:hover .cross {
   opacity: 0.6;
@@ -130,8 +142,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* элемент, который должен взаимодействовать с .cross */
+/* элемент, который должен взаимодействовать с .cross в js... js, u are welcome my friend) */
 .text:active {
-  text-decoration: line-through ;
+  text-decoration: line-through;
   opacity: 0.5;
 }
