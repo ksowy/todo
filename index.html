@@ -18,7 +18,7 @@
     </header>
     <main class="main">
       <div class="wrapper">
-        <div class="todo-desc">
+        <div class="todo-desc shadow">
           <div class="desc__submit">
             <input type="checkbox" id="submit1" name="checkbox-group" />
             <label for="submit1" class="submit"></label>
@@ -31,7 +31,7 @@
         </div>
 
         <div class=desc">
-          <ul class="desc__list">
+          <ul class="desc__list shadow">
             <li class="desc__item">
               <div class="item__submit">
                 <input type="checkbox" id="input-submit" name="checkbox-group" />
@@ -135,6 +135,35 @@
             </li>
           </ul>
         </div>
-      </div>          
+
+        <div class="meta shadow">
+          <span class="meta__items-left">
+            5 items left
+          </span>
+          <ul class="meta__list">
+            <li class="meta__item">
+              all
+            </li>
+
+            <li class="meta__item">
+              active
+            </li>
+
+            <li class="meta__item">
+              completed
+            </li>
+
+            <li class="meta__item">
+              clear completed
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </main>    
+    <footer>
+      <div class="footer__text">
+        drag and drop to reorder list
+      </div>
+    </footer>    
   </body>
 </html>

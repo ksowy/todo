@@ -9,7 +9,7 @@ body {
   font-weight: normal;
   line-height: 1.2;
   color: black;
-  background-color: gray;
+  background-color: white;
   width: 100%;
   height: 100%;
 }
@@ -58,7 +58,6 @@ body {
 .todo-desc {
   width: 100%;
   background-color: white;
-  box-shadow: 0 14px 28px rgba(44, 44, 44, 0.25), 0 10px 10px rgba(44, 44, 44, 0.22);
 
   display: flex;
   align-items: center;
@@ -118,7 +117,6 @@ body {
   width: 470px; /* разобраться с заданной шириной и назначить в процентах */
 
   background: white;
-  box-shadow: 0 14px 28px rgba(44, 44, 44, 0.25), 0 10px 10px rgba(44, 44, 44, 0.22);
 
   display: flex;
   align-items: center;
@@ -128,9 +126,6 @@ body {
 }
 .desc__item:first-child {
   border-radius: 5px 5px 0 0;
-}
-.desc__item:last-child {
-  border-radius: 0 0 5px 5px;
 }
 .desc__item:hover .cross {
   opacity: 0.6;
@@ -146,4 +141,61 @@ body {
 .text:active {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+/* CONTROL BLOCK STARTED */
+
+.meta {
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+
+  font-family: "Lexend";
+  font-weight: 400;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 0 12px 0;
+}
+.meta__items-left {
+  opacity: 0.3;
+
+  margin-left: 30px;
+}
+.meta__list {
+  display: flex;
+}
+.meta__item {
+  opacity: 0.55;
+  text-transform: capitalize;
+
+  margin-right: 10px;
+}
+.meta__item:hover {
+  opacity: 1;
+}
+.meta__item:first-child {
+  color: #79aaff;
+  opacity: 1;
+}
+.meta__item:last-child {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+/* FOOTER STARTED */
+
+.footer__text {
+  font: 300;
+  font-size: 14px;
+  opacity: 0.4;
+  text-transform: capitalize;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 55px;
 }
