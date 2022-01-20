@@ -74,6 +74,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.circle {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cbd0d4;
+  border-radius: 100%
+}
 .submit {
   width: 18px;
   height: 18px;
@@ -122,7 +128,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 18px 0 18px 0;
-  margin-bottom: 2px;
+  border-bottom: 2px solid rgb(207, 207, 207);
 }
 .desc__item:first-child {
   border-radius: 5px 5px 0 0;

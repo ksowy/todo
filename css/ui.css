@@ -70,3 +70,6 @@
   box-shadow: 0 14px 28px rgba(44, 44, 44, 0.25),
     0 10px 10px rgba(44, 44, 44, 0.22);
 }
+.text, .cross, .meta__items-left, .meta__item {
+  cursor: pointer;
+}
