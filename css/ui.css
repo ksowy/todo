@@ -2,14 +2,6 @@
 
 [type="checkbox"]:not(:checked) + label:hover::before {
   border: 2px solid #cbd0d4;
-
-  /*нужно КаК-та изменить серый цвет на градиент?? */
-
-  /* color: linear-gradient(
-        310deg,
-        rgba(184, 214, 109, 0.7) 0%,
-        rgba(55, 102, 145, 0.7) 100%
-      ); */
 }
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
@@ -66,10 +58,7 @@
 
 /* other styles*/
 
-.shadow {
-  box-shadow: 0 14px 28px rgba(44, 44, 44, 0.25),
-    0 10px 10px rgba(44, 44, 44, 0.22);
-}
-.text, .cross, .meta__items-left, .meta__item {
-  cursor: pointer;
+.item__text--completed {
+  opacity: 0.3;
+  text-decoration: line-through;
 }
