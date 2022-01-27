@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/ui.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <main class="main">
@@ -18,123 +19,117 @@
         
         <h1 class="main__title">todo</h1>
         <div class="todo-desc">
-          <div class="desc__submit">
-            <span class="circle"></span>
-          </div>
+          <div class="desc__submit"></div>
 
-          <div class="desc__text">
-            <input type="text" class="text"/>
-          </div>
+          <input type="text" class="desc__text"/>
 
         </div>
 
-        <div class=desc">
-          <ul class="desc__list">
-            <li class="desc__item">
-              <div class="item__submit">
-                <input type="checkbox" id="input-submit" name="checkbox-group" />
-                <label for="input-submit" class="submit"></label>
-              </div>
+        <ul class="desc__list">
+          <li class="desc__item">
+            <div class="item__submit">
+              <input type="checkbox" id="input-submit" name="checkbox-group" />
+              <label for="input-submit" class="submit"></label>
+            </div>
 
-              <div class="item__text">
-                <span href="#" class="text">
-                  Complete online JavaScript course
-                </span>
-              </div>
+            <div class="item__text">
+              <span href="#" class="text">
+                Complete online JavaScript course
+              </span>
+            </div>
 
-              <div class="item__cross">
-                <input type="image" src="./img/close.png" alt="cross" class="cross">  
-              </div>
-            </li>
+            <div class="item__cross">
+              <input type="image" src="./img/close.png" alt="cross" class="cross">  
+            </div>
+          </li>
 
-            <li class="desc__item">
-              <div class="item__submit">
-                <input type="checkbox" id="submit2" name="checkbox-group" />
-                <label for="submit2" class="submit"></label>
-              </div>
+          <li class="desc__item">
+            <div class="item__submit">
+              <input type="checkbox" id="submit2" name="checkbox-group" />
+              <label for="submit2" class="submit"></label>
+            </div>
 
-              <div class="item__text">
-                <span href="#" class="text">
-                  Jog around the park 3x
-                </span>
-              </div>
+            <div class="item__text">
+              <span href="#" class="text">
+                Jog around the park 3x
+              </span>
+            </div>
 
-              <div class="item__cross">
-                <input type="image" src="./img/close.png" alt="cross" class="cross">  
-              </div>
-            </li>
+            <div class="item__cross">
+              <input type="image" src="./img/close.png" alt="cross" class="cross">  
+            </div>
+          </li>
 
-            <li class="desc__item">
-              <div class="item__submit">
-                <input type="checkbox" id="submit3" name="checkbox-group" />
-                <label for="submit3" class="submit"></label>
-              </div>
+          <li class="desc__item desc__item--completed">
+            <div class="item__submit">
+              <input disabled checked type="checkbox" id="submit3" name="checkbox-group" />
+              <label for="submit3" class="submit"></label>
+            </div>
 
-              <div class="item__text">
-                <span href="#" class="text">
-                  10 minutes meditatation
-                </span>
-              </div>
+            <div class="item__text">
+              <span href="#" class="text">
+                10 minutes meditatation
+              </span>
+            </div>
 
-              <div class="item__cross">
-                <input type="image" src="./img/close.png" alt="cross" class="cross">  
-              </div>
-            </li>
+            <div class="item__cross">
+              <input type="image" src="./img/close.png" alt="cross" class="cross">  
+            </div>
+          </li>
 
-            <li class="desc__item">
-              <div class="item__submit">
-                <input type="checkbox" id="submit4" name="checkbox-group" />
-                <label for="submit4" class="submit"></label>
-              </div>
+          <li class="desc__item">
+            <div class="item__submit">
+              <input type="checkbox" id="submit4" name="checkbox-group" />
+              <label for="submit4" class="submit"></label>
+            </div>
 
-              <div class="item__text">
-                <span href="#" class="text">
-                  Read for 1 hour
-                </span>
-              </div>
+            <div class="item__text">
+              <span href="#" class="text">
+                Read for 1 hour
+              </span>
+            </div>
 
-              <div class="item__cross">
-                <input type="image" src="./img/close.png" alt="cross" class="cross">  
-              </div>
-            </li>
+            <div class="item__cross">
+              <input type="image" src="./img/close.png" alt="cross" class="cross">  
+            </div>
+          </li>
 
-            <li class="desc__item">
-              <div class="item__submit">
-                <input type="checkbox" id="submit5" name="checkbox-group" />
-                <label for="submit5" class="submit"></label>
-              </div>
+          <li class="desc__item">
+            <div class="item__submit">
+              <input type="checkbox" id="submit5" name="checkbox-group" />
+              <label for="submit5" class="submit"></label>
+            </div>
 
-              <div class="item__text">
-                <span href="#" class="text">
-                  Pick up groceries
-                </span>
-              </div>
+            <div class="item__text">
+              <span href="#" class="text">
+                Pick up groceries
+              </span>
+            </div>
 
-              <div class="item__cross">
-                <input type="image" src="./img/close.png" alt="cross" class="cross">  
-              </div>
-            </li>
+            <div class="item__cross">
+              <input type="image" src="./img/close.png" alt="cross" class="cross">  
+            </div>
+          </li>
 
-            <li class="desc__item">
-              <div class="item__submit">
-                <input type="checkbox" id="submit6" name="checkbox-group" />
-                <label for="submit6" class="submit"></label>
-              </div>
+          <li class="desc__item">
+            <div class="item__submit">
+              <input type="checkbox" id="submit6" name="checkbox-group" />
+              <label for="submit6" class="submit"></label>
+            </div>
 
-              <div class="item__text">
-                <span href="#" class="text">
-                  Complete Todo App on Frontend Mentor
-                </span>
-              </div>
+            <div class="item__text">
+              <span href="#" class="text">
+                Complete Todo App on Frontend Mentor
+              </span>
+            </div>
 
-              <div class="item__cross">
-                <input type="image" src="./img/close.png" alt="cross" class="cross">  
-              </div>
-            </li>
-          </ul>
-        </div>
+            <div class="item__cross">
+              <input type="image" src="./img/close.png" alt="cross" class="cross">  
+            </div>
+          </li>
+        </ul>
 
-        <div class="meta shadow">
+        <div class="meta">
           <span class="meta__items-left">
             5 items left
           </span>
@@ -158,8 +153,8 @@
         </div>
       </div>  
     </main>    
-    <footer>
-      <div class="footer__text">
+    <footer class="footer">
+      <div class="footer__list-order">
         drag and drop to reorder list
       </div>
     </footer>    

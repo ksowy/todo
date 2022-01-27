@@ -58,7 +58,24 @@
 
 /* other styles*/
 
-.item__text--completed {
-  opacity: 0.3;
+.desc__item--completed {
+  background: white;
+  border-bottom: 1px solid rgb(207, 207, 207);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+/* Нужно сделать checkbox в состоянии checked */
+/* .desc__item--completed > .item__submit > .submit {
+  pointer-events: none;
+} */
+.desc__item--completed > .item__text {
   text-decoration: line-through;
+  opacity: 0.4;
+}
+.desc__item--completed > .item__cross {
+  display: none;
 }
