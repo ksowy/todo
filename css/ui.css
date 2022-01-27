@@ -69,9 +69,7 @@
 }
 
 /* Нужно сделать checkbox в состоянии checked */
-/* .desc__item--completed > .item__submit > .submit {
-  pointer-events: none;
-} */
+
 .desc__item--completed > .item__text {
   text-decoration: line-through;
   opacity: 0.4;
