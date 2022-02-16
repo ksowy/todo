@@ -5,158 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo</title>
-    <link rel="icon" href="./img/favicon.ico" type="image">
+    <link rel="icon" href="./img/favicon.ico" type="image" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/ui.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <main class="main">
       <div class="main__bcg"></div>
       <div class="wrapper">
-        
         <h1 class="main__title">todo</h1>
         <div class="todo-desc">
           <div class="desc__submit"></div>
 
-          <input type="text" class="desc__text"/>
-
+          <input type="text" class="desc__text" />
         </div>
 
-        <ul class="desc__list">
-          <li class="desc__item">
-            <div class="item__submit">
-              <input type="checkbox" id="input-submit" name="checkbox-group" />
-              <label for="input-submit" class="submit"></label>
-            </div>
-
-            <div class="item__text">
-              <span href="#" class="text">
-                Complete online JavaScript course
-              </span>
-            </div>
-
-            <div class="item__cross">
-              <input type="image" src="./img/close.png" alt="cross" class="cross">  
-            </div>
-          </li>
-
-          <li class="desc__item">
-            <div class="item__submit">
-              <input type="checkbox" id="submit2" name="checkbox-group" />
-              <label for="submit2" class="submit"></label>
-            </div>
-
-            <div class="item__text">
-              <span href="#" class="text">
-                Jog around the park 3x
-              </span>
-            </div>
-
-            <div class="item__cross">
-              <input type="image" src="./img/close.png" alt="cross" class="cross">  
-            </div>
-          </li>
-
-          <li class="desc__item desc__item--completed">
-            <div class="item__submit">
-              <input disabled checked type="checkbox" id="submit3" name="checkbox-group" />
-              <label for="submit3" class="submit"></label>
-            </div>
-
-            <div class="item__text">
-              <span href="#" class="text">
-                10 minutes meditatation
-              </span>
-            </div>
-
-            <div class="item__cross">
-              <input type="image" src="./img/close.png" alt="cross" class="cross">  
-            </div>
-          </li>
-
-          <li class="desc__item">
-            <div class="item__submit">
-              <input type="checkbox" id="submit4" name="checkbox-group" />
-              <label for="submit4" class="submit"></label>
-            </div>
-
-            <div class="item__text">
-              <span href="#" class="text">
-                Read for 1 hour
-              </span>
-            </div>
-
-            <div class="item__cross">
-              <input type="image" src="./img/close.png" alt="cross" class="cross">  
-            </div>
-          </li>
-
-          <li class="desc__item">
-            <div class="item__submit">
-              <input type="checkbox" id="submit5" name="checkbox-group" />
-              <label for="submit5" class="submit"></label>
-            </div>
-
-            <div class="item__text">
-              <span href="#" class="text">
-                Pick up groceries
-              </span>
-            </div>
-
-            <div class="item__cross">
-              <input type="image" src="./img/close.png" alt="cross" class="cross">  
-            </div>
-          </li>
-
-          <li class="desc__item">
-            <div class="item__submit">
-              <input type="checkbox" id="submit6" name="checkbox-group" />
-              <label for="submit6" class="submit"></label>
-            </div>
-
-            <div class="item__text">
-              <span href="#" class="text">
-                Complete Todo App on Frontend Mentor
-              </span>
-            </div>
-
-            <div class="item__cross">
-              <input type="image" src="./img/close.png" alt="cross" class="cross">  
-            </div>
-          </li>
-        </ul>
+        <ul id="todos" class="desc__list"></ul>
 
         <div class="meta">
-          <span class="meta__items-left">
-            5 items left
-          </span>
+          <span class="meta__items-left"> 5 items left </span>
           <ul class="meta__list">
-            <li class="meta__item">
-              all
-            </li>
+            <li class="meta__item">all</li>
 
-            <li class="meta__item">
-              active
-            </li>
+            <li class="meta__item">active</li>
 
-            <li class="meta__item">
-              completed
-            </li>
+            <li class="meta__item">completed</li>
 
-            <li class="meta__item">
-              clear completed
-            </li>
+            <li class="meta__item">clear completed</li>
           </ul>
         </div>
-      </div>  
-    </main>    
-    <footer class="footer">
-      <div class="footer__list-order">
-        drag and drop to reorder list
       </div>
-    </footer>    
+    </main>
+    <footer class="footer">
+      <div class="footer__list-order">drag and drop to reorder list</div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
