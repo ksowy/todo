@@ -9,14 +9,14 @@ body {
   font-weight: normal;
   line-height: 1.2;
   color: black;
-  background-color: gray;
+  background-color: white;
   width: 100%;
   height: 100%;
 }
 
-/* HEADER STARTED*/
+/* MAIN STARTED */
 
-.header {
+.main__bcg {
   width: 100%;
   height: 290px;
   background-image: linear-gradient(
@@ -27,8 +27,13 @@ body {
     url("../img/background-nature.jpg");
   background-size: cover;
   background-position: center center;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
 }
-.header__title {
+
+.main__title {
   width: 470px;
   padding: 70px 0 50px 0;
   font-family: "Zen Kaku Gothic Antique";
@@ -36,13 +41,10 @@ body {
   font-weight: 900;
   letter-spacing: 14px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
 }
-
-/* MAIN STARTED */
-
 .main {
-  margin-top: -135px;
+  margin-top: 5px;
 }
 .wrapper {
   width: 470px;
@@ -57,18 +59,25 @@ body {
 
 .todo-desc {
   width: 100%;
+  border-radius: 5px;
+  padding: 18px;
+  margin-bottom: 25px;
+
   background-color: white;
+  box-shadow: 0 14px 28px rgb(100 100 100 / 10%),
+    0 10px 10px rgb(100 100 100 / 5%);
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border-radius: 5px;
-  padding: 18px 0 18px 0;
-  margin-bottom: 25px;
 }
 .desc__submit {
-  width: 13%;
+  width: 18px;
+  padding: 9px 0;
+  margin-right: 20px;
+
+  border: 1px solid #cbd0d4;
+  border-radius: 100%;
 
   display: flex;
   justify-content: center;
@@ -78,13 +87,15 @@ body {
   width: 18px;
   height: 18px;
 }
-.desc__text,
+.desc__text {
+  cursor: text;
+  flex: 0px;
+  border: none;
+}
 .item__text {
   flex: 0px;
 }
 .text {
-  width: 93%;
-  height: 15px;
   font-family: "Lexend";
   font-weight: normal;
   color: #444;
@@ -92,11 +103,7 @@ body {
   border: none;
 }
 .item__cross {
-  width: 13%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 20px;
 }
 .cross {
   width: 15px;
@@ -106,32 +113,95 @@ body {
 .todo-desc:hover .cross {
   opacity: 0.6;
 }
+.cross:active {
+  width: 13px;
+  height: 13px;
+}
+li .text,
+.meta__item,
+.cross {
+  cursor: pointer;
+}
 
 /* DESK STERTED */
 
+.desc__list {
+  width: 100%;
+  box-shadow: 0 14px 28px rgb(100 100 100 / 10%),
+    0 10px 10px rgb(100 100 100 / 5%);
+}
 .desc__item {
-  width: 470px; /* разобраться с заданной шириной и назначить в процентах */
-
   background: white;
+  border-bottom: 1px solid rgb(207, 207, 207);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0 18px 0;
-  margin-bottom: 2px;
+  padding: 18px 20px;
+}
+.desc__item:first-child {
+  border-radius: 5px 5px 0 0;
 }
 .desc__item:hover .cross {
   opacity: 0.6;
 }
 .item__submit {
-  width: 13%;
+  margin-right: 20px;
+}
+
+/* CONTROL BLOCK STARTED */
+
+.meta {
+  width: 100%;
+  padding: 12px 30px;
+
+  box-shadow: 0 14px 28px rgb(100 100 100 / 10%),
+    0 10px 10px rgb(100 100 100 / 5%);
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+
+  font-family: "Lexend";
+  font-weight: 400;
+  font-size: 14px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
-/* элемент, который должен взаимодействовать с .cross */
-.text:active {
-  text-decoration: line-through ;
-  opacity: 0.5;
+.meta__items-left {
+  opacity: 0.3;
+}
+.meta__list {
+  display: flex;
+}
+.meta__item {
+  opacity: 0.55;
+  text-transform: capitalize;
+
+  margin-right: 10px;
+}
+.meta__item:hover {
+  opacity: 1;
+}
+.meta__item:first-child {
+  color: #79aaff;
+  opacity: 1;
+}
+.meta__item:last-child {
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+/* FOOTER STARTED */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+.footer__list-order {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.4;
+  text-transform: capitalize;
 }
